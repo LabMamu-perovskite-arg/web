@@ -1,0 +1,597 @@
+
+h1 {
+   /* font-size: 2em;*/
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 2em;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.container-fluid-nav {
+    width: 100%;
+}
+
+.fs-4 {
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+    pointer-events: none;
+}
+
+.perovskite-logo {
+    width: 40px;
+    height: 40px;
+
+    /* filter: grayscale(100%);
+    animation: spin 4s linear infinite;
+     Establece la animación llamada 'spin' */
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.col {
+
+    flex: 1;
+    text-align: center;
+
+}
+
+
+
+#first-segment {
+    background-image: url('../css/perovskite-background.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    line-height: 1;
+
+
+
+
+
+}
+
+.mainTitle {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 5vw;
+    max-font-size: 100px;
+    text-align: center;
+}
+
+/*
+.subtitle {
+    font-size: 2vw;
+    max-font-size: 100px;
+}
+*/
+
+.image1 {
+    float: right;
+    margin-right: 10px;
+    width: 100%;
+    height: 650px;
+
+}
+
+.perovskite-right {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: spin 6s linear infinite;
+    width: 50%;
+
+
+}
+
+.perovskite-left {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    animation: spin 6s linear infinite;
+    width: 50%;
+}
+
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+.btn-learn-more {
+    width: 10em;
+    height: 2.3em;
+    margin: 0.5em;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 0.625em;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+}
+
+button:hover {
+    color: black;
+}
+
+button:after {
+    content: "";
+    background: white;
+    position: absolute;
+    z-index: -1;
+    left: -20%;
+    right: -20%;
+    top: 0;
+    bottom: 0;
+    transform: skewX(-45deg) scale(0, 1);
+    transition: all 0.5s;
+}
+
+button:hover:after {
+    transform: skewX(-45deg) scale(1, 1);
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+
+
+
+
+
+
+#second-segment {
+    background-color: #5BD3B7;
+    color: #f4f4f4;
+    text-align: center;
+    margin: auto;
+    padding-bottom: 20px;
+    
+
+}
+
+
+.p2-segment {
+    text-align: justify;
+    font-size: 100px;
+    margin: 3pc;
+}
+
+.image-container {
+    overflow: hidden;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+
+
+    border-radius: 10px;
+
+}
+
+.image2 {
+    width: 80%;
+    height: 350px;    
+    margin: auto;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    
+}
+
+.image2:hover {
+    transform: scale(1.2);
+}
+
+
+
+#third-segment {}
+
+.container-pattern {
+    width: 100%;
+    height: 100%;
+    --s: 82px;
+    --c1: #b2b2b2;
+    --c2: #ffffff;
+    --c3: #d9d9d9;
+
+    --_g: var(--c3) 0 120deg, #0000 0;
+    background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)),
+        conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+        conic-gradient(from 60deg at calc(200% / 3),
+            var(--c3) 60deg,
+            var(--c2) 0 120deg,
+            #0000 0),
+        conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)),
+        linear-gradient(90deg,
+            var(--c1) calc(100% / 6),
+            var(--c2) 0 50%,
+            var(--c1) 0 calc(500% / 6),
+            var(--c2) 0);
+    background-size: calc(1.732 * var(--s)) var(--s);
+}
+
+
+
+.map-container {
+    background-color: #F878CD;
+    /* Color rosa para el fondo */
+    padding: 10px;
+    /* Ajusta el relleno según tus necesidades */
+    border-radius: 15px;
+    /* Ajusta el radio de borde según tus necesidades */
+    width: 80%;
+    height: auto;
+    margin: 3pc;
+}
+
+.map {
+
+    width: 98%;
+    height: auto;
+    border-radius: 20px;
+    
+
+}
+
+.cnea-img {
+    width: 95%;
+    height: 365px;
+    border-radius: 20px;
+}
+
+.google-maps {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.google-maps:hover {
+    transform: translateX(20px);
+}
+
+
+
+
+#fourth-segment {
+    background-color: #0B6380;
+    display: flex;    
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: auto;
+}
+
+
+.card {
+width: 60%;
+height: auto;
+background-color: #adb5bd;
+border-radius: 20px;
+overflow: hidden;
+box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+margin: 20px;
+}
+
+.special-card {
+    width: 60%;
+    height: auto;
+    background-color: #adb5bd;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: 20px;
+    }
+
+.speaker {
+    width: 100%;
+    height: 250px;    
+}
+
+.card-content {
+    padding: 16px;
+    text-align: center;
+}
+
+.card-content h3 {
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+
+.card-content p {
+    color: #2e2e2e;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.flag {    
+    width: 30%;
+    height: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);;
+}
+
+
+
+
+
+
+
+
+
+#fifth-segment {
+    background-color: #f4f4f4;
+
+}
+
+.email {
+    color: #517306;    
+    font-size: 2.5em;    
+    font-weight: bold;    
+    letter-spacing: 2px;    
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin-bottom: 1em;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .email {
+      font-size: 24px;
+    }
+  }
+  
+
+  @media only screen and (max-width: 480px) {
+    .email {
+      font-size: 20px;
+    }
+  }
+
+
+
+.subscribe {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    overflow: hidden;
+}
+
+.form {
+
+    max-width: 100%;
+    height: auto;
+    max-height: 250px;
+    display: flex;
+    margin: auto;
+    animation: sacudida 0.5s ease-in-out infinite;
+}
+
+
+
+@keyframes sacudida {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+}
+
+
+
+
+
+
+
+#sixth-segment {
+    background-color: #f8c954;
+    margin: auto;
+}
+
+.image-container2 {
+    background-color: #f8c954;
+}
+
+.networks {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    
+}
+
+
+
+.labo {
+    display: flex;
+  }
+  
+  
+  .labo img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  
+
+
+
+
+
+
+
+  /* Switch starts here */
+.rocker {
+    display: inline-block;
+    position: relative;
+    /*
+    SIZE OF SWITCH
+    ==============
+    All sizes are in em - therefore
+    changing the font-size here
+    will change the size of the switch.
+    See .rocker-small below as example.
+    */
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #888;
+    width: 7em;
+    height: 4em;
+    overflow: hidden;
+    border-bottom: 0.5em solid #eee;
+  }
+  
+  .rocker-small {
+    font-size: 0.75em;
+   /* Sizes the switch */
+    margin: 1em;
+  }
+  
+  .rocker::before {
+    content: "";
+    position: absolute;
+    top: 0.5em;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #999;
+    border: 0.5em solid #eee;
+    border-bottom: 0;
+  }
+  
+  .rocker input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .switch-left,
+  .switch-right {
+    cursor: pointer;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5em;
+    width: 3em;
+    transition: 0.2s;
+    user-select: none;
+  }
+  
+  .switch-left {
+    height: 2.4em;
+    width: 2.75em;
+    left: 0.85em;
+    bottom: 0.4em;
+    background-color: #ddd;
+    transform: rotate(15deg) skewX(15deg);
+  }
+  
+  .switch-right {
+    right: 0.5em;
+    bottom: 0;
+    background-color: #bd5757;
+    color: #fff;
+  }
+  
+  .switch-left::before,
+  .switch-right::before {
+    content: "";
+    position: absolute;
+    width: 0.4em;
+    height: 2.45em;
+    bottom: -0.45em;
+    background-color: #ccc;
+    transform: skewY(-65deg);
+  }
+  
+  .switch-left::before {
+    left: -0.4em;
+  }
+  
+  .switch-right::before {
+    right: -0.375em;
+    background-color: transparent;
+    transform: skewY(65deg);
+  }
+  
+  input:checked + .switch-left {
+    background-color: #0084d0;
+    color: #fff;
+    bottom: 0px;
+    left: 0.5em;
+    height: 2.5em;
+    width: 3em;
+    transform: rotate(0deg) skewX(0deg);
+  }
+  
+  input:checked + .switch-left::before {
+    background-color: transparent;
+    width: 3.0833em;
+  }
+  
+  input:checked + .switch-left + .switch-right {
+    background-color: #ddd;
+    color: #888;
+    bottom: 0.4em;
+    right: 0.8em;
+    height: 2.4em;
+    width: 2.75em;
+    transform: rotate(-15deg) skewX(-15deg);
+  }
+  
+  input:checked + .switch-left + .switch-right::before {
+    background-color: #ccc;
+  }
+  
+  /* Keyboard Users */
+  input:focus + .switch-left {
+    color: #333;
+  }
+  
+  input:checked:focus + .switch-left {
+    color: #fff;
+  }
+  
+  input:focus + .switch-left + .switch-right {
+    color: #fff;
+  }
+  
+  input:checked:focus + .switch-left + .switch-right {
+    color: #333;
+  }
