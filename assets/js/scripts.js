@@ -1,4 +1,3 @@
-
 //Cambiar la pagina a Español
 function indexESP() {
     window.location.href = 'index.html';
@@ -21,3 +20,17 @@ function desactivarArrastre(event) {
     event.preventDefault();
 }
 
+
+// Slider
+
+document.addEventListener("DOMContentLoaded", function () {
+    const sliderNavLinks = document.querySelectorAll(".slider-nav a");
+    const slider = document.querySelector(".slider");
+
+    sliderNavLinks.forEach((link, index) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            slider.scrollLeft = index * slider.offsetWidth;
+        });
+    });
+});
