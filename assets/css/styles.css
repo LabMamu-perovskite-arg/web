@@ -166,7 +166,7 @@ button:hover:after {
     color: #f4f4f4;
     text-align: center;
     margin: auto;
-    padding-bottom: 20px;
+    padding: 100px 20px 100px 20px;
 
 
 }
@@ -291,6 +291,7 @@ button:hover:after {
     position: relative;
     max-width: 55rem;
     margin: 0 auto;
+    
 }
 
 .slider {
@@ -301,12 +302,16 @@ button:hover:after {
     scroll-behavior: smooth;
     box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
     border-radius: 0.5rem;
+    
+    
 }
 
 .slider img {
+    
     flex: 1 0 100%;
     scroll-snap-align: start;
     object-fit: contain; /* Editando esto cambio el tamaño de la img*/
+
 }
 
 .slider-nav {
@@ -404,7 +409,7 @@ button:hover:after {
 
 #fifth-segment {
     background-color: #f4f4f4;
-
+    padding: 50px 20px 50px 20px;
 }
 
 .email {
@@ -416,21 +421,20 @@ button:hover:after {
     max-width: 100%;
     width: 100%;
     box-sizing: border-box;
-    overflow: hidden;
+    overflow:hidden;
     margin-bottom: 1em;
 }
 
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1000px) {
     .email {
-        font-size: 24px;
+        font-size: 50px;
     }
 }
 
-
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     .email {
-        font-size: 20px;
+        font-size: 18px; /* Ajusta este valor según tus necesidades */
     }
 }
 
@@ -484,6 +488,7 @@ button:hover:after {
 #sixth-segment {
     background-color: #f8c954;
     margin: auto;
+    padding: 20px 20px 50px 20px;
 }
 
 .image-container2 {
@@ -508,3 +513,10 @@ button:hover:after {
     max-width: 100%;
     height: auto;
 }
+
+
+
+
+
+
+
