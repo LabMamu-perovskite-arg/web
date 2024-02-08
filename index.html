@@ -22,7 +22,7 @@
 
 
 <body>
-
+<!--
   <div class="container-fluid-nav">
     <div class="row">
       <div class="col">
@@ -38,7 +38,7 @@
 
 
 
-          <ul class="nav nav-pills align-items-center">
+          <ul class="nav visible nav-pills align-items-center" id="nav">
             <li class="nav-item"><a href="#fifth-segment" class="nav-link active" aria-current="page">Registrate</a>
             </li>
             <li class="nav-item"><a href="#third-segment" class="nav-link">¿Cómo llegar?</a></li>
@@ -66,6 +66,38 @@
       </div>
     </div>
   </div>
+  -->
+
+  <header>
+    <div class="logo">
+      <!-- <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo"> -->
+        <span class="fs-4">MATERIALES APLICADOS A CELDAS SOLARES DE PEROVSKITAS</span>
+        <img src="static/perovskite-logo.png" alt="perovskite-logo" class="perovskite-logo">
+    </div>
+    <button id="open"class="open-menu"><i class="fa-solid fa-bars"></i></button>
+    <nav class="nav visible" id="nav">
+        <button class="close-menu" id="close"><i class="fa-solid fa-x"></i></button>
+        <ul class="nav-list">
+            <li><a href="#fifth-segment">Registrate</a></li>
+            <li><a href="#third-segment">¿Cómo llegar?</a></li>
+            <li><a href="#fourth-segment">Expositores</a></li>
+            <li><a href="#schedule">Programa</a></li>
+            <li><a href="#"></a>
+                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                        Idioma
+                    </label>
+                    <label class="btn btn-secondary" onclick="indexESP()">
+                        ESP
+                    </label>
+                    <label class="btn btn-secondary" onclick="indexENG()">
+                        ENG
+                    </label>
+                </div>
+            </li>
+        </ul>
+    </nav>
+</header>
 
 
   <section id="first-segment">
@@ -96,7 +128,7 @@
         </div>
 
         <div class="col">
-          <img src="static/perovskite3.png" class="perovskite-left">
+          <img src="static/perovskite3.png" class="perovskite-left-1 pnone" id="pnone">
         </div>
       </div>
 
@@ -591,6 +623,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
     crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/24d1668a65.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
